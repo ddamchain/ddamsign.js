@@ -35,9 +35,9 @@ Support sign, serialization, etc.
 
 ## Serialize Transaction
 
-   let stx = signer.serializeTX(tx);
-   //deserialization just utilize JSON.parse
-   let txObj = JSON.parse(stx);
+    let stx = signer.serializeTX(tx);
+    //deserialization just utilize JSON.parse
+    let txObj = JSON.parse(stx);
 
 
 
