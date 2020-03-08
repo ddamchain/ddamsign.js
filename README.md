@@ -4,7 +4,7 @@ Pure node.js client for DDAM.
 Support sign, serialization, etc.
 
 # Install 
-    npm install ddamsign.js
+    npm install ddamsign.js --save
 
 # Usage 
 
