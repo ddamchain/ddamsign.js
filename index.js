@@ -35,7 +35,7 @@ class Signer {
 
         let buf_gas_limit = Util.encode(Util.trimLeading(Util.int2Bytes(tx.gas)));
 
-        let buf_gas_price = Util.encode(Util.trimLeading(Util.int2Bytes(tx.gasPrice)));
+        let buf_gas_price = Util.encode(Util.trimLeading(Util.int2Bytes(tx.gasprice)));
 
         let buf_type = Buffer.from([tx.type]);
 

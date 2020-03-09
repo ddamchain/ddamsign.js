@@ -54,3 +54,7 @@ console.log('\n#序列化');
 let stx = signer.serializeTX(tx);
 console.log('[serialized tx]',stx);
 console.log('[deserialize tx]',JSON.parse(stx))
+
+
+let decTx = JSON.parse("{\"target\": \"DD51a7b5a21cce0009e830a9551e3beded07f183b3f4c38e89d0471c4d4764f264\",\"value\": 1000000000,\"nonce\": 15,\"gas\":3000,\"gasprice\":500,\"tx_type\":0,\"data\": null,\"sign\": \"0xe13bbdd0a785080acd66dc8527554f9a3d3b076917ed2159eda23d08a4d7436265063515ad9548e548120ebddd38e5e182a7f9cc040b0a1f5e034888259258c200\"}");
+console.log('UnserializeTX and recover address:',signer.recoverAddress(signer.genTxHash(decTx), signer.hexToSign(decTx.sign)) ,'want',signer.getAddressFromPrivateKey('0xf241759f4e85b2188314c4636e88b8b8076606b53ebe9817bbe1b2379b930ca6'));
