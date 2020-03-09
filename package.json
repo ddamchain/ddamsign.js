@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bignumber.js": "9.0.0",
-    "sha3": "2.1.1",
+    "bignumber.js": "^9.0.0",
+    "elliptic": "^6.5.2",
+    "eth-lib": "^0.1.29",
+    "sha3": "^2.1.1",
     "web3": "1.2.6"
   }
 }
