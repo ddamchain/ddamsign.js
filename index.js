@@ -82,7 +82,7 @@ class Signer {
     }
 
     serializeTX(tx){
-       return `"{\\"target\\": \\"${tx.target}\\",\\"value\\": ${tx.value.toString()},\\"nonce\\": ${tx.nonce},\\"gas\\":${tx.gas},\\"gasprice\\":${tx.gasPrice},\\"tx_type\\":${tx.type},\\"data\\": ${tx.data||null},\\"sign\\": \\"${tx.sign}\\"}"`;
+       return `"{\\"target\\": \\"${tx.target}\\",\\"value\\": ${tx.value.toString()},\\"nonce\\": ${tx.nonce},\\"gas\\":${tx.gas},\\"gasprice\\":${tx.gasprice},\\"tx_type\\":${tx.type},\\"data\\": ${tx.data||null},\\"sign\\": \\"${tx.sign}\\"}"`;
     }
 
     sha3Sum256Digest(buffer){

@@ -38,7 +38,7 @@ console.log('\n#签名');
         tx.setSign(Signer.sign(src, tx.genHash()));
 */
 
-let tx={target:'DD7e7e1b322d0649000976b469561ed8a44501ce5094662e1befa61f061b991752',value:new BigNumber('10000000000'),gas:3000,gasPrice:500,nonce:15,type:0};
+let tx={target:'DD7e7e1b322d0649000976b469561ed8a44501ce5094662e1befa61f061b991752',value:new BigNumber('10000000000'),gas:3000,gasprice:500,nonce:15,type:0};
 //tx.sign=signer.sign(src,tx);
 let h=signer.genTxHash(tx);
 console.log('Hash result:',h);
